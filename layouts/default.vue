@@ -2,9 +2,7 @@
   <div>
     <header class="shadow-sm bg-slate-50 text-slate-900">
       <nav class="container mx-auto p-4 flex items-center justify-between">
-        <NuxtLink to="/" class="logo font-semibold text-xl">
-          Nuxt3 Crash
-        </NuxtLink>
+        <NuxtLink to="/" class="logo font-bold text-xl"> Nuxt3 </NuxtLink>
         <ul class="flex gap-4">
           <li>
             <NuxtLink to="/">Home</NuxtLink>

@@ -20,6 +20,11 @@ definePageMeta({
 
 <template>
   <div>
+    <Head>
+      <Title>Nuxt3 Merch | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
     <ProductDetails :product="product" />
   </div>
 </template>
