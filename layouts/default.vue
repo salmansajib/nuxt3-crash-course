@@ -1,8 +1,10 @@
 <template>
   <div>
-    <header class="shadow-sm bg-slate-50">
+    <header class="shadow-sm bg-slate-50 text-slate-900">
       <nav class="container mx-auto p-4 flex items-center justify-between">
-        <NuxtLink to="/" class="font-bold">Nuxt3 Crash</NuxtLink>
+        <NuxtLink to="/" class="logo font-semibold text-xl">
+          Nuxt3 Crash
+        </NuxtLink>
         <ul class="flex gap-4">
           <li>
             <NuxtLink to="/">Home</NuxtLink>
@@ -25,7 +27,7 @@
 </template>
 
 <style scoped>
-.router-link-exact-active {
+:not(.logo).router-link-exact-active {
   color: #12b488;
 }
 </style>
