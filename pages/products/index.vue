@@ -4,7 +4,16 @@ definePageMeta({
 });
 
 // fetch the products
-const { data: products } = await useFetch("https://fakestoreapi.com/products");
+const {
+  data: products,
+  status,
+  error,
+} = await useFetch("https://fakestoreapi.com/products");
+
+// Log the fetched data
+console.log("Products:", products.value);
+console.log("Status:", status.value);
+console.log("Error:", error.value);
 
 useHead({
   title: "Nuxt3 | Merch",
