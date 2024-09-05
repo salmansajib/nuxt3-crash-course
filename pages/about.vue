@@ -1,5 +1,5 @@
 <script setup>
-const { data } = await useFetch("/api/message");
+const { data } = await useFetch("/api/currency/GBP");
 console.log(data.value);
 </script>
 
