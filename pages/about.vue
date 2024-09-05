@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/message");
+console.log(data.value);
+</script>
 
 <template>
   <div>
@@ -13,5 +16,6 @@
       distinctio fugiat doloremque minima accusantium veritatis totam et
       architecto facere.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
